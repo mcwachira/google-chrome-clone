@@ -16,10 +16,10 @@ function App() {
       <div className='bg-gray-1oo dark:bg-grade-900'>
 
 
-      <h1>
-        
-        hello world
-        </h1>     </div>
+     <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
+     <Routes/>
+     <Footer/>
+        </div>
 
 
               </div>

@@ -1,10 +1,10 @@
-import React from 'react'
-import Link from 'react-router-dom'
+
+import { Link} from 'react-router-dom'
 
 interface navbarProps {
 
   darkTheme:boolean,
-  setDarkTheme:boolean
+  setDarkTheme:React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const Navbar =({ setDarkTheme, darkTheme }:navbarProps) => {

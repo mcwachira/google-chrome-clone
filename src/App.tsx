@@ -7,23 +7,17 @@ import { useState } from 'react'
 
 function App() {
 
- const [darkTheme, setDarkTheme] = useState(false)
+ const [darkTheme, setDarkTheme] = useState<boolean>(false)
  
-  return (
-    <>
-     <div className={darkTheme ? "dark": " "}>
-
-      <div className='bg-gray-1oo dark:bg-grade-900'>
-
-
-     <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme}/>
-     <Routes/>
-     <Footer/>
-        </div>
-
-
-              </div>
-    </>
+ return (
+  <div className={darkTheme ? 'dark' : ''}>
+    <div className="dark:bg-gray-900 bg-gray-100 dark:text-gray-200 black min-h-screen">
+      <Navbar setDarkTheme={setDarkTheme} darkTheme={darkTheme} />
+      <Routes />
+      <Footer />
+    </div>
+  </div>
+ 
   )
 }
 
